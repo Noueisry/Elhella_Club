@@ -1,0 +1,58 @@
+{
+  "name": "Elhella_Club",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Copie du front arabe RTL connectée à Supabase",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b",
+    "lint": "eslint src e2e vite.config.ts playwright.config.ts eslint.config.ts --max-warnings 0",
+    "test:e2e": "playwright test",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.0.0",
+    "@emotion/react": "^11.0.0",
+    "@emotion/styled": "^11.0.0",
+    "@fontsource/noto-sans-arabic": "^5.0.0",
+    "@mui/icons-material": "^9.0.0",
+    "@mui/material": "^9.0.0",
+    "@mui/stylis-plugin-rtl": "^9.0.0",
+    "@supabase/supabase-js": "^2.117.2",
+    "@tanstack/react-query": "^5.0.0",
+    "axios": "^1.0.0",
+    "html2canvas-pro": "^2.5.0",
+    "jspdf": "^4.2.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-router-dom": "^7.0.0",
+    "stylis": "^4.0.0",
+    "tailwindcss": "^4.0.0"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "^0.5.8",
+    "@eslint/js": "^10.0.0",
+    "@playwright/test": "^1.0.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/stylis": "^4.0.0",
+    "@vitejs/plugin-react": "^6.0.0",
+    "eslint": "^10.0.0",
+    "eslint-plugin-react-hooks": "^7.0.0",
+    "eslint-plugin-react-refresh": "^0.4.0",
+    "globals": "^16.0.0",
+    "jiti": "^2.0.0",
+    "pdfjs-dist": "^6.4.299",
+    "typescript": "~5.9.0",
+    "typescript-eslint": "^8.0.0",
+    "vite": "^8.0.0"
+  }
+}

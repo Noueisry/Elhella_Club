@@ -1,0 +1,5 @@
+project_id = "smd-club"
+
+[functions.manage-users]
+# The function validates bearer tokens itself with auth.getUser(), including new keys.
+verify_jwt = false

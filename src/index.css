@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans Arabic", sans-serif;
+  --breakpoint-lg: 75rem;
+}
+
+html { min-inline-size: 320px; color-scheme: light; }
+body { margin: 0; font-family: "Noto Sans Arabic", sans-serif; }
+* { box-sizing: border-box; }
+bdi { unicode-bidi: isolate; }
+button, a, input { -webkit-tap-highlight-color: transparent; }
+.app-content { min-inline-size: 0; }
+.filter-bar { display: flex; flex-wrap: wrap; gap: 16px; align-items: flex-start; }
+.filter-bar > * { min-inline-size: 0; }
+.record-link { color: #173f3b; font-weight: 600; text-decoration-thickness: 1px; text-underline-offset: 4px; overflow-wrap: anywhere; }
+.record-link:focus-visible { outline: 2px solid #173f3b; outline-offset: 4px; border-radius: 2px; }
+.money { font-variant-numeric: tabular-nums; }
+.MuiTable-root .money { white-space: nowrap; }
+.receipt-number { display: inline-block; max-inline-size: 170px; overflow-wrap: anywhere; }
+.detail-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr)); gap: 20px; margin: 0; }
+.detail-grid dt { color: #6b7a73; font-size: 0.8rem; }
+.detail-grid dd { margin: 8px 0 0; overflow-wrap: anywhere; }
+.skip-link { position: fixed; inset-block-start: -80px; inset-inline-start: 16px; z-index: 1600; background: #173f3b; color: white; border-radius: 8px; padding: 12px 18px; }
+.skip-link:focus { inset-block-start: 12px; }
+.welcome-panel { background: linear-gradient(115deg, #f2f0dc, #e8efdc 80%); border: 1px solid #e2e9d4; }
+.target-ornament { position: absolute; inset-inline-end: 45px; inset-block-start: 50%; transform: translateY(-50%); inline-size: 190px; block-size: 190px; opacity: 0.45; }
+.target-ornament div { position: absolute; border: 1px solid #a7b68c; border-radius: 50%; inset: 0; }
+.target-ornament div:nth-child(2) { inset: 27px; }
+.target-ornament div:nth-child(3) { inset: 55px; }
+.target-ornament span { position: absolute; inset: 84px; background: #a7b68c; border-radius: 50%; }
+@media (min-width: 1200px) { .app-content { margin-inline-start: 264px; } }
+@media (max-width: 900px) { .target-ornament { display: none; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; } }
